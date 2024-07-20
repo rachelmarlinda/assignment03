@@ -4,65 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19 Tracker</title>
+    <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <div class="container">
-        <div class="row d-flex justify-content-center my-auto">
+
+        <!-- screen xl xxl -->
+
+        <div class="row d-flex justify-content-center d-none d-xl-flex">
             <div class="col-7">
-                <div class="card text-center mt-4 mb-4" style="box-shadow: 2px 2px 8px 2px #8f96cc;">
+                <div class="card text-center mt-5" style="box-shadow: 2px 2px 8px 2px #8f96cc; background-color: #fedbc1;">
                     <div class="card-body" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
-                        <h1 class="card-title mb-4">COVID-19 Tracker</h1>
-                            <div class="row d-flex justify-content-center mb-4">
-                                <div class="col-5">
-                                    <input type="text" class="form-control rounded-pill text-center" value="Indonesia">
-                                </div>
-                                <button type="submit" class="btn col-2 rounded-pill" style="background-color: #ea696a; color: white;">Get Data</button>
+                        <h1 class="card-title mb-4 mt-2">COVID-19 Tracker</h1>
+                        <div class="row d-flex justify-content-center mb-4">
+                            <div class="col-5">
+                                <input type="text" class="form-control rounded-pill text-center" style="box-shadow: 1px 1px 6px 1px white;" value="Indonesia">
                             </div>
+                            <button type="submit" class="btn col-2 rounded-pill" style="background-color: #ea696a; color: white; box-shadow: 1px 1px 6px 1px #ea696a;">Get Data</button>
+                        </div>
                         <div class="row d-flex justify-content-evenly mb-4">
-                            <div class="card col-3">
+                            <div class="card col-3" style="height: 160px; box-shadow: 1px 1px 6px 1px #ea696a;">
                                 <div class="card-body">
-                                    <img src="images/activecases.png" class="card-img-top object-fit-contain h-25 mt-3" alt="...">
-                                    <h6 class="card-title">Active Cases</h6>
+                                    <img src="images/activecases.png" class="card-img-top object-fit-contain" height="60px" alt="...">
+                                    <h6 class="card-title mt-2">Active Cases</h6>
                                     <h5 class="card-text">265824</h5>
                                 </div>
                             </div>
-                            <div class="card col-3">
+                            <div class="card col-3" style="height: 160px; box-shadow: 1px 1px 6px 1px #ea696a;">
                                 <div class="card-body">
-                                    <img src="images/newcases.png" class="card-img-top object-fit-contain h-25 mt-3" alt="...">
-                                    <h6 class="card-title">New Cases</h6>
+                                    <img src="images/newcases.png" class="card-img-top object-fit-contain" height="60px" alt="...">
+                                    <h6 class="card-title mt-2">New Cases</h6>
                                     <h5 class="card-text">+46843</h5>
                                 </div>
                             </div>
-                            <div class="card col-3">
+                            <div class="card col-3" style="height: 160px; box-shadow: 1px 1px 6px 1px #ea696a;">
                                 <div class="card-body">
-                                    <img src="images/recoveredcases.png" class="card-img-top object-fit-contain h-25 mt-3" alt="...">
-                                    <h6 class="card-title">Recovered Cases</h6>
+                                    <img src="images/recoveredcases.png" class="card-img-top object-fit-contain" height="60px" alt="...">
+                                    <h6 class="card-title mt-2">Recovered</h6>
                                     <h5 class="card-text">4216328</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="row d-flex justify-content-evenly mb-2">
-                            <div class="card col-3">
+                        <div class="row d-flex justify-content-evenly mb-4">
+                            <div class="card col-3" style="height: 160px; box-shadow: 1px 1px 6px 1px #ea696a;">
                                 <div class="card-body">
-                                    <img src="images/totalcases.png" class="card-img-top object-fit-contain h-25 mt-3" alt="...">
-                                    <h6 class="card-title">Total Cases</h6>
+                                    <img src="images/totalcases.png" class="card-img-top object-fit-contain" height="60px" alt="...">
+                                    <h6 class="card-title mt-2">Total Cases</h6>
                                     <h5 class="card-text">4626936</h5>
                                 </div>
                             </div>
-                            <div class="card col-3">
+                            <div class="card col-3" style="height: 160px; box-shadow: 1px 1px 6px 1px #ea696a;">
                                 <div class="card-body">
-                                    <img src="images/totaldeaths.png" class="card-img-top object-fit-contain h-25 mt-3" height="20" alt="...">
-                                    <h6 class="card-title">Total Deaths</h6>
+                                    <img src="images/totaldeaths.png" class="card-img-top object-fit-contain" height="60px" alt="...">
+                                    <h6 class="card-title mt-2">Total Deaths</h6>
                                     <h5 class="card-text">144784</h5>
                                 </div>
                             </div>
-                            <div class="card col-3" style="height: 180px">
+                            <div class="card col-3" style="height: 160px; box-shadow: 1px 1px 6px 1px #ea696a;">
                                 <div class="card-body">
-                                    <img src="images/totaltests.png" class="card-img-top object-fit-contain h-25" height="20" alt="...">
-                                    <h6 class="card-title">Total Tests</h6>
+                                    <img src="images/totaltests.png" class="card-img-top object-fit-contain" height="60px" alt="...">
+                                    <h6 class="card-title mt-2">Total Tests</h6>
                                     <h5 class="card-text">75752374</h5>
                                 </div>
                             </div>
@@ -70,6 +73,250 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- screen lg -->
+
+        <div class="d-none d-lg-flex d-xl-none row d-flex justify-content-center">
+            <div class="col-10">
+                <div class="card d-flex justify-content-center" id="topmargincardlg" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; box-shadow: 2px 2px 8px 2px #8f96cc; background-color: #fedbc1;">
+                    <div class="card-body my-5">
+                        <h1 class="card-title text-center" id="sizeuplgh1">COVID-19 Tracker</h1>
+                        <div class="row d-flex justify-content-center mt-4">
+                            <div class="col-4">
+                                <input type="text" class="form-control rounded-pill text-center" style="box-shadow: 1px 1px 6px 1px white;" value="Indonesia">
+                            </div>
+                            <button type="submit" class="btn col-2 rounded-pill" style="background-color: #ea696a; color: white; box-shadow: 1px 1px 6px 1px #ea696a;">Get Data</button>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <div class="card mt-5" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="images/activecases.png" class="card-img-top object-fit-contain" height="75px" alt="...">
+                                            </div>
+                                            <div class="col-5">
+                                                <h3 class="card-title">Active Cases</h3>
+                                                <h1 class="card-text">265824</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <div class="card mt-4" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="images/newcases.png" class="card-img-top object-fit-contain" height="75px" alt="...">
+                                            </div>
+                                            <div class="col-5">
+                                                <h3 class="card-title">New Cases</h3>
+                                                <h1 class="card-text">+46843</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <div class="card mt-4" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="images/recoveredcases.png" class="card-img-top object-fit-contain" height="75px" alt="...">
+                                            </div>
+                                            <div class="col-5">
+                                                <h3 class="card-title">Recovered</h3>
+                                                <h1 class="card-text">4216328</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <div class="card mt-4" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="images/totalcases.png" class="card-img-top object-fit-contain" height="75px" alt="...">
+                                            </div>
+                                            <div class="col-5">
+                                                <h3 class="card-title">Total Cases</h3>
+                                                <h1 class="card-text">4626936</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <div class="card mt-4" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="images/totaldeaths.png" class="card-img-top object-fit-contain" height="75px" alt="...">
+                                            </div>
+                                            <div class="col-5">
+                                                <h3 class="card-title">Total Deaths</h3>
+                                                <h1 class="card-text">144784</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-8">
+                                <div class="card mt-4 mb-4" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="images/totaltests.png" class="card-img-top object-fit-contain" height="75px" alt="...">
+                                            </div>
+                                            <div class="col-5">
+                                                <h3 class="card-title">Total Tests</h3>
+                                                <h1 class="card-text">75752374</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- screen xs -->
+
+        <div class="d-flex d-lg-none row justify-content-center"> 
+            <div class="col-11">
+                <div class="card d-flex justify-content-center" id="topmargincardxs" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; box-shadow: 2px 2px 8px 2px #8f96cc; background-color: #fedbc1;">
+                    <div class="card-body justify-content-evenly">
+                        <h4 class="card-title text-center">COVID-19 Tracker</h4>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-7 ps-0 pe-2">
+                                <input value="Indonesia" class="text-center form-control form-control-sm rounded-pill" style="box-shadow: 1px 1px 6px 1px white;">
+                            </div>
+                            <button type="submit" class="btn btn-sm rounded-pill col-4 sizedownxsp" style="background-color: #ea696a; color: white; box-shadow: 1px 1px 6px 1px #ea696a;">Get Data</button>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <div class="card py-1 mt-3" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body py-0">
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col-3">
+                                                <img src="images/activecases.png" class="object-fit-contain" height="40px" alt="...">
+                                            </div>
+                                            <div class="col-7">
+                                                <p class="card-title sizedownxsp mb-0">Active Cases</p>
+                                                <p class="card-text sizedownxsp">265824</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <div class="card py-1 mt-2" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body py-0">
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col-3">
+                                                <img src="images/newcases.png" class="object-fit-contain" height="40px" alt="...">
+                                            </div>
+                                            <div class="col-7">
+                                                <p class="card-title sizedownxsp mb-0">New Cases</p>
+                                                <p class="card-text sizedownxsp">+46843</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <div class="card py-1 mt-2" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body py-0">
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col-3">
+                                                <img src="images/recoveredcases.png" class="object-fit-contain" height="40px" alt="...">
+                                            </div>
+                                            <div class="col-7">
+                                                <p class="card-title sizedownxsp mb-0">Recovered</p>
+                                                <p class="card-text sizedownxsp">4216328</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <div class="card py-1 mt-2" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body py-0">
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col-3">
+                                                <img src="images/totalcases.png" class="object-fit-contain" height="40px" alt="...">
+                                            </div>
+                                            <div class="col-7">
+                                                <p class="card-title sizedownxsp mb-0">Total Cases</p>
+                                                <p class="card-text sizedownxsp">4626936</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <div class="card py-1 mt-2" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body py-0">
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col-3">
+                                                <img src="images/totaldeaths.png" class="object-fit-contain" height="40px" alt="...">
+                                            </div>
+                                            <div class="col-7">
+                                                <p class="card-title sizedownxsp mb-0">Total Deaths</p>
+                                                <p class="card-text sizedownxsp">144784</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12">
+                                <div class="card py-1 mt-2" style="box-shadow: 1px 1px 6px 1px #ea696a;">
+                                    <div class="card-body py-0">
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col-3">
+                                                <img src="images/totaltests.png" class="object-fit-contain" height="40px" alt="...">
+                                            </div>
+                                            <div class="col-7">
+                                                <p class="card-title sizedownxsp mb-0">Total Tests</p>
+                                                <p class="card-text sizedownxsp">75752374</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="mt-4 d-flex justify-content-center" id="iconattribution">
+            <a href="https://www.vecteezy.com/free-vector/corona">Corona Vectors by Vecteezy</a>
         </div>
     </div>
 

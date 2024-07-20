@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(#8f96cc, #fedbc1);
+}
+
+#iconattribution {
+    font-size: 10px;
+}
+
+#iconattribution a:link {
+    text-decoration: none;
+    color: #ea696a;
+}
+
+#iconattribution a:visited {
+    text-decoration: none;
+    color: #ea696a;
+}
+
+#iconattribution a:hover {
+    text-decoration: none;
+    color: #ea696a;
+}
+
+#sizeuplgh1 {
+    font-size: 60px;
+}
+
+#topmargincardlg {
+    margin-top: 80px;
+}
+
+.sizedownxsp {
+    font-size: 15px;
+}
+
+#topmargincardxs {
+    margin-top: 22px;
+}
